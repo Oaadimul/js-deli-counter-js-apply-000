@@ -1,18 +1,19 @@
 
 function takeANumber(katzDeliLine, name) {
   var position = katzDeliLine.length+1
+  var customers = 
   katzDeliLine.push(name)
 return "Welcome, " + name +". You are number "+ position + " in line."
   
 }
 
-function nowServing(deliLine) {
+function nowServing(katzDeliLine) {
   var name;
   
-  if(deliLine.length ==+ 0) {
+  if(katzDeliLine.length ==+ 0) {
     return "There is nobody waiting to be served!"
   }
-name = deliLine.shift()
+name = katzDeliLine.shift()
 return "Currently serving "+ name + "."
 }
 
